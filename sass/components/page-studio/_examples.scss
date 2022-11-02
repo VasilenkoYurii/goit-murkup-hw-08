@@ -1,0 +1,47 @@
+.section--no-padding {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.examples__title {
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
+.examples__list {
+  display: flex;
+  gap: 30px;
+}
+
+.examples__item {
+  position: relative;
+}
+
+.examples__img {
+  display: block;
+}
+
+.examples__prg {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-white);
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
