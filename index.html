@@ -22,9 +22,17 @@
     <header class="page-header">
       <div class="conteiner page-header__conteiner">
         <nav class="logo-nav">
-          <a href="./index.html" lang="en" class="logo"
-            ><span class="logo__logo--first-words">Web</span>Studio</a
-          >
+          <div class="logo-nav__mobile">
+            <a href="./index.html" lang="en" class="logo"
+              ><span class="logo__logo--first-words">Web</span>Studio</a
+            >
+            <button type="button" class="menu-button is-open">
+              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
+                <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
 
           <ul class="site-nav">
             <li>
@@ -56,7 +64,7 @@
       </div>
     </header>
 
-    <main>
+    <!-- <main>
       <section class="hero">
         <div class="section hero__section">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -482,9 +490,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal__exit-box">
           <svg class="modal__exit-icon" height="18" width="18">
@@ -553,7 +561,7 @@
           <button type="submit" class="modal__submit-button-modal">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>

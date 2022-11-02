@@ -10,16 +10,22 @@
 .page-header__conteiner {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
-  align-items: center;
-}
 
-.logo-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -30,93 +36,142 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .logo__logo--first-words {
   color: var(--blue);
 }
 
-.site-nav {
+.logo-nav__mobile {
   display: flex;
-  gap: 50px;
-  margin-left: 93px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.site-nav__link {
-  position: relative;
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
   display: block;
-  color: var(--black);
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 
-  &:hover,
-  &:focus {
-    color: var(--blue);
+.site-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
   }
 }
 
-.site-nav__link--current {
-  color: var(--blue);
-}
+// .logo-nav {
+//     display: flex;
+//     align-items: center;
+//   }
+
+// .site-nav__link {
+//   position: relative;
+
+//   display: block;
+//   color: var(--black);
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+
+//   transition-property: color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--blue);
+//   }
+// }
+
+// .site-nav__link--current {
+//   color: var(--blue);
+// }
 
 .auth-nav {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
-}
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
-.auth-nav__link {
-  display: block;
-  color: var(--p-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: var(--blue);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
   }
 }
 
-.auth-nav__link--envelope {
-  display: flex;
-  align-items: center;
-}
+// .auth-nav__link {
+//   display: block;
+//   color: var(--p-color);
+//   padding-top: 32px;
+//   padding-bottom: 32px;
 
-.auth-nav__link--smartphone {
-  display: flex;
-  align-items: center;
-}
+//   transition-property: color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.mail-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
+//   &:hover,
+//   &:focus {
+//     color: var(--blue);
+//   }
+// }
 
-.smartphone-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
+// .auth-nav__link--envelope {
+//   display: flex;
+//   align-items: center;
+// }
 
-.site-nav__link--current {
-  color: var(--blue);
-}
+// .auth-nav__link--smartphone {
+//   display: flex;
+//   align-items: center;
+// }
 
-.site-nav__link--current::after {
-  display: block;
-  position: relative;
-  bottom: -33px;
-  content: '';
-  height: 4px;
-  width: 100%;
-  background-color: #2196f3;
-  border-radius: 2px;
-}
+// .mail-icon {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
+
+// .smartphone-icon {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
+
+// .site-nav__link--current {
+//   color: var(--blue);
+// }
+
+// .site-nav__link--current::after {
+//   display: block;
+//   position: relative;
+//   bottom: -33px;
+//   content: '';
+//   height: 4px;
+//   width: 100%;
+//   background-color: #2196f3;
+//   border-radius: 2px;
+// }
