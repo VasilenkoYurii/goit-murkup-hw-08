@@ -16,6 +16,11 @@
   list-style: none;
   gap: 30px;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: initial;
@@ -24,6 +29,10 @@
 
 .features__item {
   display: block;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 270px;
@@ -41,8 +50,11 @@
   margin-bottom: 30px;
   padding: 0;
 
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
   @media screen and (min-width: 1200px) {
-    height: 120px;
     width: 270px;
   }
 }
