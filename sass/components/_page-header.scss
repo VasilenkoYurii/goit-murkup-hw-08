@@ -74,8 +74,10 @@
 }
 
 .logo-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav__link {
@@ -179,12 +181,14 @@
 }
 
 .site-nav__link--current::after {
-  display: block;
-  position: relative;
-  bottom: -33px;
-  content: '';
-  height: 4px;
-  width: 100%;
-  background-color: var(--blue);
-  border-radius: 2px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: relative;
+    bottom: -33px;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: 2px;
+  }
 }
