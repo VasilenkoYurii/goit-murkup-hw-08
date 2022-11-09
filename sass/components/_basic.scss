@@ -45,6 +45,10 @@ input {
   padding-left: 15px;
   padding-right: 15px;
 
+  @media screen and (max-width: 479px) {
+    width: auto;
+  }
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }

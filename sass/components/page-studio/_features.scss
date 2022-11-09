@@ -30,6 +30,12 @@
 .features__item {
   display: block;
 
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media screen and (min-width: 768px) {
     width: 354px;
   }
@@ -43,12 +49,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
+  width: 290px;
   height: 120px;
   background: var(--bg-batton);
   border-radius: 4px;
   margin-bottom: 30px;
   padding: 0;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 354px;
