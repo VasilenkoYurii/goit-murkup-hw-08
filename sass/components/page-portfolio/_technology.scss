@@ -6,7 +6,22 @@
 }
 
 .technology__box {
-  width: 370px;
+  width: 450px;
+  height: 404px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+.technology__box:nth-child(2) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 440px;
+  }
 }
 
 .technology__link {
@@ -31,6 +46,18 @@
 
 .technology__img {
   display: block;
+
+  object-fit: cover;
+  width: 450px;
+  height: 294px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .technology__overplay {
@@ -82,4 +109,14 @@
   font-size: 16px;
   line-height: 1.88;
   padding-bottom: 20px;
+
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   padding-bottom: 56px;
+  // }
+}
+
+.technology__box:first-child .technology__prg {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
 }

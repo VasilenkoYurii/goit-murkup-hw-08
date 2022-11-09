@@ -1,12 +1,35 @@
-.page-list__conteiner {
-  padding-bottom: 50px;
-}
+// .page-list__conteiner {
+//   padding-bottom: 30px;
+
+//   @media screen and (min-width: 768px) {
+//     padding-bottom: 40px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     padding-bottom: 50px;
+//   }
+// }
 
 .page-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
   gap: 8px;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.page-list__item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-top: 7px;
+  }
 }
 
 .page-list__button {
