@@ -16,6 +16,10 @@
   list-style: none;
   gap: 30px;
 
+  @media screen and (max-width: 479px) {
+    align-items: center;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,6 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 290px;
   }
 
   @media screen and (min-width: 768px) {
@@ -76,6 +81,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__prg {

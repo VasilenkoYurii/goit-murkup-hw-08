@@ -28,11 +28,14 @@
 }
 
 .page-footer__contact {
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    align-items: normal;
   }
 }
 
@@ -123,6 +126,7 @@
   @media screen and (min-width: 1200px) {
     display: block;
     margin-left: 70px;
+    text-align: left;
   }
 }
 
@@ -211,7 +215,8 @@
 }
 
 .footer-form__email {
-  width: 290px;
+  width: calc(100vw - 30px);
+
   height: 50px;
   color: var(--color-a-ftr);
   background-color: var(--color-ftr);
